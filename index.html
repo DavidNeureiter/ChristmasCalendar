@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventskalender</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #calendar-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 80%;
+            max-width: 500px;
+        }
+
+        h1 {
+            color: #ff5722;
+        }
+    </style>
+</head>
+<body>
+    <div id="calendar-container">
+        <h1>Adventskalender</h1>
+        <p id="day-text"></p>
+    </div>
+    <script>
+        const texts = [
+            "Text für den 1. Dezember",
+            "Text für den 2. Dezember",
+            "Text für den 3. Dezember",
+            "Text für den 4. Dezember",
+            "Text für den 5. Dezember",
+            "Text für den 6. Dezember",
+            "Text für den 7. Dezember",
+            "Text für den 8. Dezember",
+            "Text für den 9. Dezember",
+            "Text für den 10. Dezember",
+            "Text für den 11. Dezember",
+            "Text für den 12. Dezember",
+            "Text für den 13. Dezember",
+            "Text für den 14. Dezember",
+            "Text für den 15. Dezember",
+            "Text für den 16. Dezember",
+            "Text für den 17. Dezember",
+            "Text für den 18. Dezember",
+            "Text für den 19. Dezember",
+            "Text für den 20. Dezember",
+            "Text für den 21. Dezember",
+            "Text für den 22. Dezember",
+            "Text für den 23. Dezember",
+            "Text für den 24. Dezember"
+        ];
+
+        function getTextForToday() {
+            const today = new Date();
+            const dayOfMonth = today.getDate(); // Gibt den aktuellen Tag des Monats zurück
+            if (today.getMonth() === 11 && dayOfMonth >= 1 && dayOfMonth <= 24) {
+                return texts[dayOfMonth - 1];
+            }
+            return "Der Adventskalender ist noch nicht gestartet oder die Zeit ist abgelaufen.";
+        }
+
+        document.getElementById('day-text').textContent = getTextForToday();
+    </script>
+</body>
+</html>
