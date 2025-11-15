@@ -38,30 +38,30 @@
     </div>
     <script>
         const texts = [
-            "Text für den 1. Dezember",
-            "Text für den 2. Dezember",
-            "Text für den 3. Dezember",
-            "Text für den 4. Dezember",
-            "Text für den 5. Dezember",
-            "Text für den 6. Dezember",
-            "Text für den 7. Dezember",
-            "Text für den 8. Dezember",
-            "Text für den 9. Dezember",
-            "Text für den 10. Dezember",
-            "Text für den 11. Dezember",
-            "Text für den 12. Dezember",
-            "Text für den 13. Dezember",
-            "Text für den 14. Dezember",
-            "Text für den 15. Dezember",
-            "Text für den 16. Dezember",
-            "Text für den 17. Dezember",
-            "Text für den 18. Dezember",
-            "Text für den 19. Dezember",
-            "Text für den 20. Dezember",
-            "Text für den 21. Dezember",
-            "Text für den 22. Dezember",
-            "Text für den 23. Dezember",
-            "Text für den 24. Dezember"
+" 1. Dezember: Heute Abend gibt es ein Kuscheln unter der Decke bei einem schönen Film.",
+" 2. Dezember: Heute bekommst du ein liebevolles Kompliment, das nur für dich ist.",
+" 3. Dezember: Heute schenke ich dir fünf Minuten volle Aufmerksamkeit – du erzählst, ich höre zu.",
+" 4. Dezember: Heute koche ich dein Lieblingsessen für dich.",
+" 5. Dezember: Heute bekommst du über den Tag verteilt kleine süße Nachrichten von mir.",
+" 6. Dezember: Heute machen wir gemeinsam einen Spaziergang unter dem Sternenhimmel.",
+" 7. Dezember: Heute bekommst du eine kleine Musik-Überraschung – eine Playlist nur für dich.",
+" 8. Dezember: Heute nehme ich mir einen ruhigen Moment nur für dich – ohne Handy, ohne Ablenkung.",
+" 9. Dezember: Heute gibt es ein spontanes Mini-Date, das ich für uns plane.",
+" 10. Dezember: Heute findest du irgendwo einen kleinen Liebesbrief von mir.",
+" 11. Dezember: Heute erledige ich etwas für dich, das du schon länger aufschiebst.",
+" 12. Dezember: Heute trinken wir zusammen eine heiße Schokolade und reden über schöne Erinnerungen.",
+" 13. Dezember: Heute bekommst du eine entspannende Massage von mir.",
+" 14. Dezember: Heute schenke ich dir ein Lächeln, das du den ganzen Tag mitnehmen kannst.",
+" 15. Dezember: Heute verbringen wir den Abend ohne Handy – nur wir zwei.",
+" 16. Dezember: Heute zaubere ich ein kleines gemütliches Abendessen für uns.",
+" 17. Dezember: Heute sage ich dir etwas, das ich besonders an dir liebe.",
+" 18. Dezember: Heute spielen wir ein Spiel oder puzzeln – einfach entspannt zusammen.",
+" 19. Dezember: Heute gehen wir gemeinsam bei romantischem Licht spazieren.",
+" 20. Dezember: Heute bekommt du meine volle Aufmerksamkeit – alles, was wir tun, machen wir gemeinsam.",
+" 21. Dezember: Heute gönnst du dir Ruhe, während ich die Hausarbeit übernehme.",
+" 22. Dezember: Heute reden wir über Träume und Wünsche – ganz persönlich und in Ruhe.",
+" 23. Dezember: Heute schreiben wir gemeinsam schöne Erinnerungen in ein kleines Gedankenbuch.",
+" 24. Dezember: Heute bekommst du eine lange, warme Umarmung, die dir zeigt, wie sehr ich dich liebe."
         ];
 
         function getTextForToday() {
@@ -70,7 +70,7 @@
             if (today.getMonth() === 11 && dayOfMonth >= 1 && dayOfMonth <= 24) {
                 return texts[dayOfMonth - 1];
             }
-            return "Der Adventskalender ist noch nicht gestartet oder die Zeit ist abgelaufen.";
+            return "Der Adventskalender startet am 24. Dezember.";
         }
 
         document.getElementById('day-text').textContent = getTextForToday();
