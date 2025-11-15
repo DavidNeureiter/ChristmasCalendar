@@ -70,7 +70,7 @@
             if (today.getMonth() === 11 && dayOfMonth >= 1 && dayOfMonth <= 24) {
                 return texts[dayOfMonth - 1];
             }
-            return "Der Adventskalender startet am 24. Dezember.";
+            return "Der Adventskalender startet am 24. Dezember. Du musst leider noch warten";
         }
 
         document.getElementById('day-text').textContent = getTextForToday();
